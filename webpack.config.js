@@ -1,4 +1,5 @@
 const path = require('path');
+const NodemonPlugin = require('nodemon-webpack-plugin')
 
 module.exports = {
     target: 'node',
@@ -21,5 +22,8 @@ module.exports = {
                 presets: ["@babel/preset-env"]
             }
         }]
-    }
+    },
+    plugins:[
+        new NodemonPlugin()
+    ]
 }
