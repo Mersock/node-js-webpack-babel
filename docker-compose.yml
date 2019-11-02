@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  node-webpack-bable:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3400:3000"
+    volumes:
+      - /usr/app/node_modules
+      - .:/usr/app  
