@@ -1,6 +1,7 @@
 import express from 'express'
-const app = express();
 import routes  from './src/routes'
+
+const app = express();
 
 let port = 3000
 
