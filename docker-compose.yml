@@ -4,6 +4,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    container_name: node-webpack-bable  
     ports:
       - "3400:3000"
     volumes:
